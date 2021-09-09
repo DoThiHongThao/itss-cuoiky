@@ -14,12 +14,14 @@ function List() {
             <br />
             <h4>{"削除する名前を入力してください。"}</h4>
             <br />
-            <div style={{display:"flex", flexDirection:"row", alignItems:"baseline"}}>
-                <input value={name} onChange={(event) => setName(event.target.value)} id="name" style={{padding:"5px 5px"}}/>
-            </div>
-            <br />
-            <div style={{display:"flex", flexDirection:"row", alignItems:"baseline", justifyContent: "flex-end"}}>
-                <button onClick={()=>{handleFunction.deleteStudent(name)}} style={{padding:"5px"}}>{"確定"}</button>
+            <div style={{display:"flex"}}>
+                <div style={{display:"flex", flexDirection:"row", alignItems:"baseline", marginRight:"10%"}}>
+                    <input value={name} onChange={(event) => setName(event.target.value)} id="name" style={{padding:"5px 5px"}}/>
+                </div>
+                <br />
+                <div style={{display:"flex", flexDirection:"row", alignItems:"baseline", justifyContent: "flex-end"}}>
+                    <button onClick={()=>{handleFunction.deleteStudent(name)}} style={{padding:"5px"}}>{"確定"}</button>
+                </div>
             </div>
             <br />
             <div style={{display:"flex", flexDirection:"row", alignItems:"baseline"}}>
